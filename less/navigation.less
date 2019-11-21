@@ -1,1 +1,25 @@
 // Navigation Styles here
+
+nav {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    border-bottom: .3rem dashed @silver;
+    .displayFlex(row, space-between, center);
+
+    .nav-links {
+        .displayFlex(row, space-around, center);
+        a {
+            font-size: 1.7rem;
+            margin-right: 2rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+       
+
+    } 
+}
