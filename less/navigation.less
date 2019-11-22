@@ -1,1 +1,41 @@
 // Navigation Styles here
+
+nav {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    border-bottom: .3rem dashed @silver;
+    .displayFlex(row, space-between, center);
+
+    @media @tablet {
+        padding: 2rem;
+        .displayFlex(row, space-around, center);
+    }
+
+    @media @mobile {
+        .displayFlex(column, center, center);
+        padding: 1rem 0;
+    }
+
+    .nav-links {
+        .displayFlex(row, space-evenly, center);
+        a {
+            font-size: 1.7rem;
+            margin-right: 2rem;
+
+            @media @mobile {
+                margin-right: 1rem;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        @media @mobile {
+            margin-top: 1rem;
+        }
+    } 
+}
+

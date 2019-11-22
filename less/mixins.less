@@ -1,1 +1,24 @@
 // Mixins in here
+
+.displayFlex(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button(@width, @color, @background) {
+    width: @width;
+    color: @color;
+    background: @background;
+    border: none;
+    border-radius: 1.6rem;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1.3rem;
+}
+
+.addedAnimation(@name, @duration, @iteration) {
+    animation: @name @duration @iteration;
+}
+
