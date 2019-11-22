@@ -8,18 +8,34 @@ nav {
     border-bottom: .3rem dashed @silver;
     .displayFlex(row, space-between, center);
 
-    .nav-links {
+    @media @tablet {
+        padding: 2rem;
         .displayFlex(row, space-around, center);
+    }
+
+    @media @mobile {
+        .displayFlex(column, center, center);
+        padding: 1rem 0;
+    }
+
+    .nav-links {
+        .displayFlex(row, space-evenly, center);
         a {
             font-size: 1.7rem;
             margin-right: 2rem;
+
+            @media @mobile {
+                margin-right: 1rem;
+            }
 
             &:hover {
                 text-decoration: underline;
             }
         }
 
-       
-
+        @media @mobile {
+            margin-top: 1rem;
+        }
     } 
 }
+
